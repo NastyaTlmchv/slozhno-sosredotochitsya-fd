@@ -121,7 +121,7 @@
 
 .header__theme-menu-button {
   background: none;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -340,7 +340,7 @@
 /* Карточки с советами */
 .cards-how {
   display: grid;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .advice-card {
