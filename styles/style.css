@@ -53,10 +53,7 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--nav-color);
-  box-shadow: 
-    0 0 2px var(--nav-color),
-    0 0 5px var(--nav-color),
-    0 0 8px var(--nav-color);
+  box-shadow: 0 0 4px 2px var(--nav-color);
 }
 
 @media (min-width: 768px) {
@@ -128,8 +125,7 @@
   text-transform: lowercase;
   color: var(--nav-color);
   cursor: pointer;
-  padding: 1,5px 13px 1.5px 13px;
-  width: 70px;
+  padding: 0 13px 0 13px;
 }
 
 @media (min-width: 1024px) {
@@ -149,7 +145,6 @@
 
 /* Состояние кнопок */
 .header__theme-menu-button_active {
-  background-color: transparent;
   pointer-events: none;
   border: 1px solid var(--nav-color);
 }
@@ -164,8 +159,6 @@
 
 .header__theme-menu-button:hover {
   border: var(--border-button-hover);
-  cursor: pointer;
-  background-color: transparent;
 }
 
 /* Заголовок шапки */
@@ -232,10 +225,13 @@
 }
 
 /* Секция "Почему сосредоточиться так сложно" */
-.who {
+.section {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.who {
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
@@ -299,11 +295,6 @@
 }
 
 /* Секция "Что снижает концентрацию внимания?" */
-.what {
-  display: grid;
-  gap: 20px;
-}
-
 @media (min-width: 768px) {
   .title-what {
     width: calc((100% - 40px) / 3);
@@ -326,9 +317,7 @@
 
 /* Cекция "Как концентрироваться лучше?" */
 .how {
-  display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -341,11 +330,6 @@
 .cards-how {
   display: grid;
   gap: 20px;
-}
-
-.advice-card {
-  display: grid;
-  gap: 10px;
 }
 
 .subtitle-card {
